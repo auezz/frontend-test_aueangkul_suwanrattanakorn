@@ -1,7 +1,7 @@
 html,
 body{
     margin: 0;
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .main-bg{
@@ -126,6 +126,77 @@ body{
     opacity: 1;
 }
 
+@media screen and (min-width: 375px) {
+    .main-bg{
+        height: 239px;
+    }
+    .left-banner{
+        top: 239px;
+        left: unset;
+        border: unset;
+        width: 100%;
+        height: 201px;
+    }
+    .left-banner > .title{
+        top: 264px;
+        left: 52px;
+        width: 271px;
+        height: 35px;
+
+        /* UI Properties */
+
+        text-align: left;
+        font: normal normal normal 24px/32px Noto Sans JP;
+        letter-spacing: 0.96px;
+        color: #FFFFFF;
+        opacity: 1;
+        white-space: nowrap;
+    }
+    
+    .left-banner > .sub-title {
+        top: 303px;
+        left: 49px;
+        width: 278px;
+        height: 15px;
+
+        /* UI Properties */
+
+        text-align: center;
+        font: normal normal normal 10px/29px Noto Sans JP;
+        letter-spacing: 0.8px;
+        color: #B6B6B6;
+        opacity: 1;
+        white-space: nowrap;
+    }
+
+    .detail-box{
+        top: 336px;
+        left: 32px;
+        width: 311px;
+        height: 69px;
+
+        /* UI Properties */
+
+        background: #516075 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+
+    .right-banner{
+        top: 48px;
+        left: 32px;
+        width: 311px;
+        height: 165px;
+
+        /* UI Properties */
+
+        opacity: 1;
+    }
+
+    
+
+
+}
+
 @media screen and (min-width: 768px) {
     .main-bg{
         /* padding: 0 32px; */
@@ -177,9 +248,11 @@ body{
     }
 
     .right-banner{
-        top: unset;
+        /* top: unset; */
         left: unset;
         width: 90%;
+        top: 48px;
+        height: 165px;
     }
 
     .right-banner > .group-box{
@@ -190,8 +263,8 @@ body{
     }
 
     .right-banner > .group-box > div{
-        width: 76px ;
-        height: 76px;
+        width: 76px !important;
+        height: 76px !important;
         flex-basis: 25%;
         
     }
