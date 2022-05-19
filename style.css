@@ -1,0 +1,231 @@
+html,
+body{
+    margin: 0;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.main-bg{
+    position: relative;
+    background-image: url('./assets/bg.png');
+    width: 100%;
+    height: 560px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.left-banner{
+    position: absolute;
+    top: 105px;
+    left: 140px;
+    width: 350px;
+    height: 350px;
+    /* UI Properties */
+    background: #000000 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF;
+    opacity: 1;
+}
+
+.left-banner > .title{
+    position: fixed;
+    top: 136px;
+    left: 190px;
+    width: 194px;
+    height: 203px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 46px/67px Noto Sans JP;
+    letter-spacing: 1.88px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.left-banner > .sub-title{
+    position: fixed;
+    top: 358px;
+    left: 188px;
+    width: 254px;
+    height: 54px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal normal 16px/29px Noto Sans JP;
+    letter-spacing: 1.36px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.right-banner{
+    position: absolute;
+    top: 79px;
+    left: 70%;
+    width: 306px;
+    height: 305px;
+    /* UI Properties */
+    opacity: 1;
+    
+
+}
+
+.right-banner > .group-box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.right-banner > .group-box > div {
+    display: flex; 
+    flex-basis: calc(50% - 6px);  
+    justify-content: center;
+    flex-direction: column;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+
+.right-banner > .group-box > div:nth-child(odd){
+    margin: 3px 3px 3px 0;
+}
+
+.right-banner > .group-box > div:nth-child(even){
+    margin: 3px 0 3px 3px;
+}
+
+.right-banner > .group-box > div > p{
+    padding: 0 10px;
+    margin: 10px 0 0 0;
+    text-align: center;
+    font-weight: bold;
+    font: normal normal bold 14px/19px Noto Sans JP;
+    letter-spacing: 0.56px;
+}
+
+.detail-box{
+    position: absolute;
+    padding: 0 10px;
+    top: 400px;
+    left: 70%;
+    width: 305px;
+    height: 83px;
+    background: #516075 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    align-items: center;
+    
+}
+
+.detail-box > p{
+    text-align: center;
+    font: normal normal bold 13px/19px Noto Sans JP;
+    letter-spacing: 1.04px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .main-bg{
+        /* padding: 0 32px; */
+        background-image: url('./assets/bg@2x.png');
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-banner{
+        top: unset;
+        left: unset;
+        right: unset;
+        height: 201px;
+        bottom: 0;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        
+    }
+
+    .left-banner .title{
+        margin-top: 25px;
+        height: fit-content;
+        position: unset;
+        width: unset;
+        top: 264px;
+        font: normal normal normal 24px/32px Noto Sans JP;
+        letter-spacing: 0.96px;
+        text-align: center;
+    }
+
+    .left-banner .sub-title{
+        position: unset;
+        margin-top: 10px;
+        height: fit-content;
+        width: unset;
+    }
+
+    .detail-box{
+        top: unset;
+        left: unset;
+        padding: 0 23px;
+        bottom: 35px;
+        width: 80%;
+        font: normal normal bold 13px/19px Noto Sans JP;
+        letter-spacing: 1.04px;
+        
+    }
+
+    .right-banner{
+        top: unset;
+        left: unset;
+        width: 90%;
+    }
+
+    .right-banner > .group-box{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .right-banner > .group-box > div{
+        width: 76px ;
+        height: 76px;
+        flex-basis: 25%;
+        
+    }
+    /* 
+    .right-banner > .group-box > div:nth-child(odd){
+        flex: 0 0 50px;
+    } */
+}
+
+/*
+.right-banner > .tl-box{
+    padding: 10px;
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    // UI Properties 
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-banner > .tr-box{
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    
+}
+*/
+
+.icon{
+    
+}
